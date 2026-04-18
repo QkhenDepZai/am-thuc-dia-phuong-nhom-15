@@ -54,7 +54,7 @@ function initFilter() {
 function initPopup() {
     const buttons = document.querySelectorAll(".btn-secondary");
 
-    if (buttons.length === 0) return; // 👈 thêm
+    if (buttons.length === 0) return; 
 
     buttons.forEach(btn => {
         btn.addEventListener("click", () => {
