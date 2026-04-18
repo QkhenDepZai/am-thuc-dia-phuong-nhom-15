@@ -12,7 +12,7 @@ function initSearch() {
     const input = document.getElementById("search");
     const items = document.querySelectorAll(".dish-item");
 
-    if (!input) return; // 👈 THÊM DÒNG NÀY
+    if (!input) return; 
 
     input.addEventListener("input", () => {
         const keyword = input.value.toLowerCase();
@@ -30,7 +30,7 @@ function initFilter() {
     const buttons = document.querySelectorAll(".filter-btn");
     const items = document.querySelectorAll(".dish-item");
 
-    if (buttons.length === 0) return; // 👈 thêm
+    if (buttons.length === 0) return; 
 
     buttons.forEach(btn => {
         btn.addEventListener("click", () => {
