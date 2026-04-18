@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Ẩm Thực Địa Phương</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <div class="container header-container">
+                <a href="#" class="logo-link group">
+                    <i data-lucide="utensils-crossed" class="logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Ẩm Thực</span>
+                        <span class="logo-subtitle">Địa Phương</span>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-item">Trang chủ</a>
+                    <a href="mon-an.html" class="nav-item">Món ăn</a>
+                    <a href="nha-hang.html" class="nav-item">Nhà hàng</a>
+                    <a href="tour.html" class="nav-item">Tour ẩm thực</a>
+                    <a href="gioi-thieu.html" class="nav-item">Giới thiệu</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <a href="index.html" class="mobile-nav-item">Trang chủ</a>
+                <a href="mon-an.html" class="mobile-nav-item">Món ăn</a>
+                <a href="nha-hang.html" class="mobile-nav-item">Nhà hàng</a>
+                <a href="tour.html" class="mobile-nav-item">Tour ẩm thực</a>
+                <a href="gioi-thieu.html" class="mobile-nav-item">Giới thiệu</a>
+            </nav>
+        </header>
+
+	<main class="main-content bg-gray-50">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Nhà Hàng & Quán Ăn</h1>
+                    <p>Danh sách các địa điểm ẩm thực uy tín được tuyển chọn kỹ lưỡng</p>
+                </div>
+            </section>
+
+            <section class="py-12">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="restaurant-card group">
+                            <div class="rest-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1771830938161-fa94d0f77f90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWV0bmFtJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwZGluaW5nfGVufDF8fHx8MTc3NDkyNzYwN3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Nhà Hàng Phố Cổ">
+                            </div>
+                            <div class="rest-content">
+                                <div class="rest-header">
+                                    <h3 class="text-2xl">Nhà Hàng Phố Cổ</h3>
+                                    <div class="rating-badge" style="position: static; background: var(--orange-100); color: var(--orange-700);"><i data-lucide="star" class="icon-tiny"></i> 4.8</div>
+                                </div>
+                                <p class="text-orange-600 font-medium mb-2">Phở & Bún</p>
+                                <p class="text-gray-600 line-clamp-2">Nhà hàng với không gian cổ kính, chuyên phục vụ các món phở và bún truyền thống từ năm 1985.</p>
+                                <div class="rest-info-list">
+                                    <div class="rest-info-item"><i data-lucide="map-pin" class="icon-small"></i> 45 Hàng Bạc, Hoàn Kiếm, Hà Nội</div>
+                                    <div class="rest-info-item"><i data-lucide="phone" class="icon-small"></i> (024) 3828 1234</div>
+                                    <div class="rest-info-item"><i data-lucide="clock" class="icon-small"></i> 6:00 - 22:00</div>
+                                </div>
+                                <div class="mt-auto dish-footer border-t pt-4">
+                                    <span class="text-sm text-gray-500">1245 đánh giá</span>
+                                    <button class="btn btn-secondary py-2 px-4">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="restaurant-card group">
+                            <div class="rest-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1759299710388-690bf2305e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHN0cmVldCUyMGZvb2QlMjBtYXJrZXR8ZW58MXx8fHwxNzc0ODQwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Quán Ăn Sài Gòn">
+                            </div>
+                            <div class="rest-content">
+                                <div class="rest-header">
+                                    <h3 class="text-2xl">Quán Ăn Sài Gòn</h3>
+                                    <div class="rating-badge" style="position: static; background: var(--orange-100); color: var(--orange-700);"><i data-lucide="star" class="icon-tiny"></i> 4.7</div>
+                                </div>
+                                <p class="text-orange-600 font-medium mb-2">Cơm Tấm & Hủ Tiếu</p>
+                                <p class="text-gray-600 line-clamp-2">Hương vị Nam Bộ đích thực với các món cơm tấm sườn nướng và hủ tiếu Nam Vang nổi tiếng.</p>
+                                <div class="rest-info-list">
+                                    <div class="rest-info-item"><i data-lucide="map-pin" class="icon-small"></i> 128 Nguyễn Trãi, Q1, TP.HCM</div>
+                                    <div class="rest-info-item"><i data-lucide="phone" class="icon-small"></i> (028) 3925 5678</div>
+                                    <div class="rest-info-item"><i data-lucide="clock" class="icon-small"></i> 5:00 - 23:00</div>
+                                </div>
+                                <div class="mt-auto dish-footer border-t pt-4">
+                                    <span class="text-sm text-gray-500">987 đánh giá</span>
+                                    <button class="btn btn-secondary py-2 px-4">Xem chi tiết</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>        
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const buttons = document.querySelectorAll('.filter-btn');
+                const dishes = document.querySelectorAll('.dish-item');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        const filter = btn.getAttribute('data-filter');
+                        dishes.forEach(dish => {
+                            if (filter === 'all' || dish.getAttribute('data-category') === filter) {
+                                dish.style.display = 'block';
+                            } else { dish.style.display = 'none'; }
+                        });
+                    });
+                });
+            });
+        </script>
+	<footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Ẩm Thực Địa Phương</h4>
+                    <p>Khám phá những món ăn đặc sản và văn hóa ẩm thực phong phú của vùng đất này.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#mon-an">Món ăn đặc sản</a></li>
+                        <li><a href="#nha-hang">Nhà hàng</a></li>
+                        <li><a href="#tour">Tour ẩm thực</a></li>
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul class="contact-info">
+                        <li><i data-lucide="map-pin"></i>207 Giải Phóng, Phường Bạch Mai, TP. Hà Nội, Việt Nam</li>
+                        <li><i data-lucide="phone"></i> (84)24.36.280.280</li>
+                        <li><i data-lucide="mail"></i> dhktqd@neu.edu.vn</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Ẩm Thực Địa Phương. Bản quyền thuộc về chúng tôi.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileNav.classList.remove('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu"></i>';
+            }
+            lucide.createIcons(); // Re-render the new icon
+        });
+    </script>
+</body>
+</html>

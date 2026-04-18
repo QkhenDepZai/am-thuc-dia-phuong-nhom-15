@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Ẩm Thực Địa Phương</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <div class="container header-container">
+                <a href="#" class="logo-link group">
+                    <i data-lucide="utensils-crossed" class="logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Ẩm Thực</span>
+                        <span class="logo-subtitle">Địa Phương</span>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-item">Trang chủ</a>
+                    <a href="mon-an.html" class="nav-item">Món ăn</a>
+                    <a href="nha-hang.html" class="nav-item">Nhà hàng</a>
+                    <a href="tour.html" class="nav-item">Tour ẩm thực</a>
+                    <a href="gioi-thieu.html" class="nav-item">Giới thiệu</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <a href="index.html" class="mobile-nav-item">Trang chủ</a>
+                <a href="mon-an.html" class="mobile-nav-item">Món ăn</a>
+                <a href="nha-hang.html" class="mobile-nav-item">Nhà hàng</a>
+                <a href="tour.html" class="mobile-nav-item">Tour ẩm thực</a>
+                <a href="gioi-thieu.html" class="mobile-nav-item">Giới thiệu</a>
+            </nav>
+        </header>
+
+	<main class="main-content bg-gray-50">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Giới Thiệu</h1>
+                    <p>Câu chuyện về hành trình kết nối văn hóa ẩm thực</p>
+                </div>
+            </section>
+
+            <section class="py-16">
+                <div class="container">
+                    <div class="story-grid max-w-4xl mx-auto">
+                        <div>
+                            <h2 class="text-3xl mb-4">Câu Chuyện Của Chúng Tôi</h2>
+                            <p class="text-gray-600 mb-4">Ẩm Thực Địa Phương được thành lập vào năm 2020 với sứ mệnh giới thiệu và bảo tồn những giá trị văn hóa ẩm thực truyền thống của vùng đất.</p>
+                            <p class="text-gray-600 mb-4">Chúng tôi tin rằng mỗi món ăn đều mang trong mình một câu chuyện, một nét văn hóa riêng biệt cần được gìn giữ và lan tỏa đến thế hệ sau.</p>
+                        </div>
+                        <div class="rest-img-wrap rounded-xl shadow-lg" style="height: 24rem; width: 100%;">
+                            <img src="https://images.unsplash.com/photo-1759299710388-690bf2305e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHN0cmVldCUyMGZvb2QlMjBtYXJrZXR8ZW58MXx8fHwxNzc0ODQwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Our story">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-white">
+                <div class="container">
+                    <div class="mission-vision-grid max-w-4xl mx-auto">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i data-lucide="target"></i></div>
+                            <h3 class="text-2xl mb-4">Sứ Mệnh</h3>
+                            <p class="text-gray-700">Giới thiệu và bảo tồn văn hóa ẩm thực địa phương, kết nối du khách với những trải nghiệm ẩm thực đích thực và ý nghĩa.</p>
+                        </div>
+                        <div class="mv-card">
+                            <div class="mv-icon"><i data-lucide="eye"></i></div>
+                            <h3 class="text-2xl mb-4">Tầm Nhìn</h3>
+                            <p class="text-gray-700">Trở thành nền tảng hàng đầu về du lịch ẩm thực địa phương, nơi mọi người có thể khám phá, trải nghiệm và chia sẻ.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="container stats-grid">
+                    <div><div class="text-5xl font-bold mb-2">100+</div><div class="text-lg opacity-90">Món ăn</div></div>
+                    <div><div class="text-5xl font-bold mb-2">50+</div><div class="text-lg opacity-90">Nhà hàng</div></div>
+                    <div><div class="text-5xl font-bold mb-2">20+</div><div class="text-lg opacity-90">Tour</div></div>
+                    <div><div class="text-5xl font-bold mb-2">10K+</div><div class="text-lg opacity-90">Khách hàng</div></div>
+                </div>
+            </section>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const buttons = document.querySelectorAll('.filter-btn');
+                const dishes = document.querySelectorAll('.dish-item');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        const filter = btn.getAttribute('data-filter');
+                        dishes.forEach(dish => {
+                            if (filter === 'all' || dish.getAttribute('data-category') === filter) {
+                                dish.style.display = 'block';
+                            } else { dish.style.display = 'none'; }
+                        });
+                    });
+                });
+            });
+        </script>
+	<footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Ẩm Thực Địa Phương</h4>
+                    <p>Khám phá những món ăn đặc sản và văn hóa ẩm thực phong phú của vùng đất này.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#mon-an">Món ăn đặc sản</a></li>
+                        <li><a href="#nha-hang">Nhà hàng</a></li>
+                        <li><a href="#tour">Tour ẩm thực</a></li>
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul class="contact-info">
+                        <li><i data-lucide="map-pin"></i>207 Giải Phóng, Phường Bạch Mai, TP. Hà Nội, Việt Nam</li>
+                        <li><i data-lucide="phone"></i> (84)24.36.280.280</li>
+                        <li><i data-lucide="mail"></i> dhktqd@neu.edu.vn</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Ẩm Thực Địa Phương. Bản quyền thuộc về chúng tôi.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileNav.classList.remove('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu"></i>';
+            }
+            lucide.createIcons(); // Re-render the new icon
+        });
+    </script>
+</body>
+</html>

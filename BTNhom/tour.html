@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Ẩm Thực Địa Phương</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <div class="container header-container">
+                <a href="#" class="logo-link group">
+                    <i data-lucide="utensils-crossed" class="logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Ẩm Thực</span>
+                        <span class="logo-subtitle">Địa Phương</span>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-item">Trang chủ</a>
+                    <a href="mon-an.html" class="nav-item">Món ăn</a>
+                    <a href="nha-hang.html" class="nav-item">Nhà hàng</a>
+                    <a href="tour.html" class="nav-item">Tour ẩm thực</a>
+                    <a href="gioi-thieu.html" class="nav-item">Giới thiệu</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <a href="index.html" class="mobile-nav-item">Trang chủ</a>
+                <a href="mon-an.html" class="mobile-nav-item">Món ăn</a>
+                <a href="nha-hang.html" class="mobile-nav-item">Nhà hàng</a>
+                <a href="tour.html" class="mobile-nav-item">Tour ẩm thực</a>
+                <a href="gioi-thieu.html" class="mobile-nav-item">Giới thiệu</a>
+            </nav>
+        </header>
+
+	<main class="main-content bg-gray-50">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Tour Ẩm Thực</h1>
+                    <p>Trải nghiệm văn hóa ẩm thực với các tour du lịch được thiết kế đặc biệt</p>
+                </div>
+            </section>
+
+            <section class="py-12">
+                <div class="container">
+                    <div class="tour-grid">
+                        <div class="dish-card group">
+                            <div class="tour-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1759299710388-690bf2305e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHN0cmVldCUyMGZvb2QlMjBtYXJrZXR8ZW58MXx8fHwxNzc0ODQwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Tour Hà Nội" class="dish-image">
+                                <div class="tour-price-tag">650.000đ</div>
+                            </div>
+                            <div class="dish-detailed-content">
+                                <h3 class="text-2xl mb-2">Tour Ẩm Thực Phố Cổ Hà Nội</h3>
+                                <div class="rest-info-item text-gray-500 mb-4"><i data-lucide="map-pin" class="icon-tiny"></i> Hà Nội</div>
+                                <p class="text-gray-600 mb-4 line-clamp-2">Khám phá hương vị đích thực của phố cổ Hà Nội với các món ăn đường phố nổi tiếng như phở, bún chả, bánh cuốn.</p>
+                                
+                                <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                    <div class="rest-info-item"><i data-lucide="clock" class="icon-small"></i> 4 giờ</div>
+                                    <div class="rest-info-item"><i data-lucide="users" class="icon-small"></i> Tối đa 12 người</div>
+                                </div>
+
+                                <div class="tour-highlights">
+                                    <h4 class="font-bold mb-2">Điểm nổi bật:</h4>
+                                    <ul>
+                                        <li>Thử 5+ món ăn địa phương</li>
+                                        <li>Tham quan chợ truyền thống</li>
+                                        <li>Hướng dẫn viên am hiểu văn hóa</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-secondary w-full" style="width: 100%;"><i data-lucide="calendar"></i> Đặt tour ngay</button>
+                            </div>
+                        </div>
+
+                        <div class="dish-card group">
+                            <div class="tour-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1771830938161-fa94d0f77f90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWV0bmFtJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwZGluaW5nfGVufDF8fHx8MTc3NDkyNzYwN3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Tour Sài Gòn" class="dish-image">
+                                <div class="tour-price-tag">550.000đ</div>
+                            </div>
+                            <div class="dish-detailed-content">
+                                <h3 class="text-2xl mb-2">Tour Ẩm Thực Sài Gòn Về Đêm</h3>
+                                <div class="rest-info-item text-gray-500 mb-4"><i data-lucide="map-pin" class="icon-tiny"></i> TP. Hồ Chí Minh</div>
+                                <p class="text-gray-600 mb-4 line-clamp-2">Trải nghiệm văn hóa ẩm thực đường phố Sài Gòn với bánh xèo, hủ tiếu, và các món ăn vặt đặc sắc trong ánh đèn đêm sôi động.</p>
+                                
+                                <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                    <div class="rest-info-item"><i data-lucide="clock" class="icon-small"></i> 3.5 giờ</div>
+                                    <div class="rest-info-item"><i data-lucide="users" class="icon-small"></i> Tối đa 10 người</div>
+                                </div>
+
+                                <div class="tour-highlights">
+                                    <h4 class="font-bold mb-2">Điểm nổi bật:</h4>
+                                    <ul>
+                                        <li>Khám phá ẩm thực đêm</li>
+                                        <li>6+ điểm dừng chân</li>
+                                        <li>Di chuyển bằng xe máy</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-secondary w-full" style="width: 100%;"><i data-lucide="calendar"></i> Đặt tour ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>	        
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const buttons = document.querySelectorAll('.filter-btn');
+                const dishes = document.querySelectorAll('.dish-item');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        const filter = btn.getAttribute('data-filter');
+                        dishes.forEach(dish => {
+                            if (filter === 'all' || dish.getAttribute('data-category') === filter) {
+                                dish.style.display = 'block';
+                            } else { dish.style.display = 'none'; }
+                        });
+                    });
+                });
+            });
+        </script>
+	<footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Ẩm Thực Địa Phương</h4>
+                    <p>Khám phá những món ăn đặc sản và văn hóa ẩm thực phong phú của vùng đất này.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#mon-an">Món ăn đặc sản</a></li>
+                        <li><a href="#nha-hang">Nhà hàng</a></li>
+                        <li><a href="#tour">Tour ẩm thực</a></li>
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul class="contact-info">
+                        <li><i data-lucide="map-pin"></i>207 Giải Phóng, Phường Bạch Mai, TP. Hà Nội, Việt Nam</li>
+                        <li><i data-lucide="phone"></i> (84)24.36.280.280</li>
+                        <li><i data-lucide="mail"></i> dhktqd@neu.edu.vn</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Ẩm Thực Địa Phương. Bản quyền thuộc về chúng tôi.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        let isMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileNav.classList.remove('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu"></i>';
+            }
+            lucide.createIcons(); // Re-render the new icon
+        });
+    </script>
+</body>
+</html>

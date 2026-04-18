@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Phở Hà Nội",
+    "category": "main",
+    "desc": "Đặc sản nổi tiếng",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=1080"
+  },
+  {
+    "name": "Bún Chả",
+    "category": "main",
+    "desc": "Thịt nướng đậm đà",
+    "image": "https://www.seriouseats.com/thmb/9X8uhzg8CbdfvZ2N4n_nrdi8eQ0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20231204-SEA-VyTran-BunChaHanoi-22-f8b6e4838ceb4807b92368052c79e8f9.jpg"
+  },
+  {
+    "name": "Bún Đậu",
+    "category": "appetizer",
+    "desc": "Mắm tôm đặc trưng",
+    "image": "https://i1-giadinh.vnecdn.net/2025/05/16/Bun-dau-mam-tom-6-vnexpress-17-9082-8722-1747388531.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=VCrLRZmNwHNYitGjXe6NVw"
+  },
+  {
+    "name": "Gỏi Cuốn",
+    "category": "appetizer",
+    "desc": "Tươi mát",
+    "image": "https://images.unsplash.com/photo-1656945843375-207bb6e47750?w=1080"
+  },
+  {
+    "name": "Cà Phê Sữa Đá",
+    "category": "drink",
+    "desc": "Đậm đà truyền thống",
+    "image": "https://i1-dulich.vnecdn.net/2025/02/08/Mina3-1739009970-7154-1739011658.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=8VavHwKhuQd9iG6bffpcWw"
+  }
+]

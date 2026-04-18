@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Ẩm Thực Địa Phương</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <div class="container header-container">
+                <a href="#" class="logo-link group">
+                    <i data-lucide="utensils-crossed" class="logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Ẩm Thực</span>
+                        <span class="logo-subtitle">Địa Phương</span>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-item">Trang chủ</a>
+                    <a href="mon-an.html" class="nav-item">Món ăn</a>
+                    <a href="nha-hang.html" class="nav-item">Nhà hàng</a>
+                    <a href="tour.html" class="nav-item">Tour ẩm thực</a>
+                    <a href="gioi-thieu.html" class="nav-item">Giới thiệu</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <nav id="mobile-nav" class="mobile-nav hidden">
+                <a href="index.html" class="mobile-nav-item">Trang chủ</a>
+                <a href="mon-an.html" class="mobile-nav-item">Món ăn</a>
+                <a href="nha-hang.html" class="mobile-nav-item">Nhà hàng</a>
+                <a href="tour.html" class="mobile-nav-item">Tour ẩm thực</a>
+                <a href="gioi-thieu.html" class="mobile-nav-item">Giới thiệu</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-bg-overlay">
+                    <img src="https://images.unsplash.com/photo-1759299710388-690bf2305e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHN0cmVldCUyMGZvb2QlMjBtYXJrZXR8ZW58MXx8fHwxNzc0ODQwNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Street food" class="hero-image">
+                </div>
+                <div class="container hero-content">
+                    <h1 class="hero-title">Khám Phá Ẩm Thực Địa Phương</h1>
+                    <p class="hero-subtitle">Hành trình tìm kiếm hương vị đặc sắc của vùng đất</p>
+                    <div class="hero-buttons">
+                        <a href="mon-an.html" class="btn btn-primary">
+                            Khám phá món ăn
+                            <i data-lucide="arrow-right" class="icon-small"></i>
+                        </a>
+                        <a href="tour.html" class="btn btn-outline">
+                            Đặt tour ngay
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon-wrapper">
+                                <i data-lucide="utensils-crossed"></i>
+                            </div>
+                            <h3>Món ăn đa dạng</h3>
+                            <p>Hơn 100 món ăn đặc sản địa phương được giới thiệu chi tiết</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-wrapper">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <h3>Địa điểm uy tín</h3>
+                            <p>Danh sách nhà hàng và quán ăn được tuyển chọn kỹ lưỡng</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-wrapper">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h3>Tour hấp dẫn</h3>
+                            <p>Trải nghiệm tour ẩm thực với hướng dẫn viên chuyên nghiệp</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dishes">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Món Ăn Nổi Bật</h2>
+                        <p>Những món ăn đặc sản không thể bỏ qua</p>
+                    </div>
+
+                    <div class="dishes-grid">
+                        <div class="dish-card group">
+                            <div class="dish-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1701480253822-1842236c9a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWV0bmFtZXNlJTIwcGhvJTIwbm9vZGxlJTIwc291cHxlbnwxfHx8fDE3NzQ4NzgxNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Phở Bò" class="dish-image">
+                            </div>
+                            <div class="dish-content">
+                                <h3>Phở Bò</h3>
+                                <p>Món ăn truyền thống đặc trưng với nước dùng thơm ngon</p>
+                                <div class="dish-footer">
+                                    <span class="dish-price">45.000đ</span>
+                                    <a href="mon-an.html" class="dish-link">
+                                        Chi tiết <i data-lucide="arrow-right" class="icon-tiny"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-card group">
+                            <div class="dish-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1600454309261-3dc9b7597637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYW5oJTIwbWklMjBzYW5kd2ljaCUyMHZpZXRuYW18ZW58MXx8fHwxNzc0OTI3NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Bánh Mì" class="dish-image">
+                            </div>
+                            <div class="dish-content">
+                                <h3>Bánh Mì</h3>
+                                <p>Bánh mì Việt Nam với nhân đa dạng và giòn tan</p>
+                                <div class="dish-footer">
+                                    <span class="dish-price">25.000đ</span>
+                                    <a href="mon-an.html" class="dish-link">
+                                        Chi tiết <i data-lucide="arrow-right" class="icon-tiny"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-card group">
+                            <div class="dish-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1656945843375-207bb6e47750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWV0bmFtZXNlJTIwc3ByaW5nJTIwcm9sbHMlMjBmcmVzaHxlbnwxfHx8fDE3NzQ5MjcwMTF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Gỏi Cuốn" class="dish-image">
+                            </div>
+                            <div class="dish-content">
+                                <h3>Gỏi Cuốn</h3>
+                                <p>Gỏi cuốn tươi mát với tôm thịt và rau thơm</p>
+                                <div class="dish-footer">
+                                    <span class="dish-price">35.000đ</span>
+                                    <a href="mon-an.html" class="dish-link">
+                                        Chi tiết <i data-lucide="arrow-right" class="icon-tiny"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dish-card group">
+                            <div class="dish-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1636256290269-817753a83c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWV0bmFtZXNlJTIwY29mZmVlJTIwZHJpcHxlbnwxfHx8fDE3NzQ4NjM3MTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cà Phê Sữa Đá" class="dish-image">
+                            </div>
+                            <div class="dish-content">
+                                <h3>Cà Phê Sữa Đá</h3>
+                                <p>Cà phê phin truyền thống đậm đà hương vị</p>
+                                <div class="dish-footer">
+                                    <span class="dish-price">30.000đ</span>
+                                    <a href="mon-an.html" class="dish-link">
+                                        Chi tiết <i data-lucide="arrow-right" class="icon-tiny"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dishes-btn-container">
+                        <a href="mon-an.html" class="btn btn-secondary">
+                            Xem tất cả món ăn
+                            <i data-lucide="arrow-right" class="icon-small"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta">
+                <div class="container cta-container">
+                    <h2>Trải Nghiệm Tour Ẩm Thực</h2>
+                    <p>Đặt tour ngay hôm nay để khám phá những món ăn đặc sản với hướng dẫn viên địa phương</p>
+                    <a href="tour.html" class="btn btn-primary">
+                        Khám phá tour
+                        <i data-lucide="arrow-right" class="icon-small"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+	<footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h4>Ẩm Thực Địa Phương</h4>
+                    <p>Khám phá những món ăn đặc sản và văn hóa ẩm thực phong phú của vùng đất này.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên kết</h4>
+                    <ul>
+                        <li><a href="#mon-an">Món ăn đặc sản</a></li>
+                        <li><a href="#nha-hang">Nhà hàng</a></li>
+                        <li><a href="#tour">Tour ẩm thực</a></li>
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul class="contact-info">
+                        <li><i data-lucide="map-pin"></i>207 Giải Phóng, Phường Bạch Mai, TP. Hà Nội, Việt Nam</li>
+                        <li><i data-lucide="phone"></i> (84)24.36.280.280</li>
+                        <li><i data-lucide="mail"></i> dhktqd@neu.edu.vn</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2026 Ẩm Thực Địa Phương. Bản quyền thuộc về chúng tôi.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+<script src="main.js"></script>
